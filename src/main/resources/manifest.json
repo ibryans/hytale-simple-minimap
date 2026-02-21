@@ -1,0 +1,16 @@
+{
+    "Group": "bsoliveira",
+    "Name": "Simple Minimap",
+    "Version": "0.0.1",
+    "Description": "A Simple minimap mod for Hytale",
+    "Authors": [
+        {
+            "Name": "Bryan Oliveira",
+            "Email": "bsoliveira@proton.me",
+            "Url": "https://bsoliveira.com"
+        }
+    ],
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "Main": "com.bsoliveira.simpleminimap.MinimapPlugin"
+}

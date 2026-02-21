@@ -1,0 +1,6 @@
+Group {
+  Group #MinimapContainer {
+    Background: PatchStyle(TexturePath: "MinimapBackground.png");
+    Anchor: (Top: 10, Right: 10, Width: 250, Height: 250);
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "TranslationProperties": {
+    "Name": "Mini mapa",
+    "Description": "A map of the local area."
+  },
+  "Id": "Minimap_Item",
+  "Icon": "Icons/ItemsGenerated/minimap_icon.png",
+  "Quality": "Legendary",
+  "MaxStack": 1,
+  "Categories": ["Items.Utility"],
+  "Utility": {
+    "Usable": true
+  },
+  "Recipe": {
+    "TimeSeconds": 2.0,
+    "Input": [
+      { "ItemId": "Ingredient_Fabric_Scrap_Linen", "Quantity": 53 }
+    ],
+    "BenchRequirement": [
+      { "Id": "Workbench", "Type": "Crafting", "Categories": ["Workbench_Tools"] }
+    ]
+  },
+  "Interactions": {
+    "SwapTo": {
+      "Interactions": [
+        { "Type":  "minimap_interaction" }
+      ]
+    },
+    "SwapFrom": {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Interactions": [
+            { "Type": "minimap_close_interaction" },
+            { "Type": "ChangeActiveSlot" }
+          ]
+        }
+      ]
+    },
+    "HeldOffhand": {
+      "Interactions": [
+        { "Type":  "minimap_interaction" },
+        {
+          "Type": "Simple",
+          "RunTime": 86400.0,
+          "Failed": {
+            "Type": "minimap_close_interaction"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "simple_minimap",
+  "name": "Simple Minimap",
+  "version": "0.0.1",
+  "author": "Bryan Oliveira",
+  "mainClass": "com.bsoliveira.simpleminimap.MinimapPlugin",
+  "description": "Adds a Map item to display a simple minimap on player's HUD"
+}
